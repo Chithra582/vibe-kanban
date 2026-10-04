@@ -1,0 +1,18 @@
+name: "worktree-isolator"
+description: "Provisions, cleans, and manages isolated Git worktrees and temporary branches for agent task execution."
+input_schema:
+  type: object
+  properties:
+    branch_name:
+      type: string
+      description: "Name of the task branch to checkout."
+    base_commit:
+      type: string
+      description: "Base commit hash or parent branch ref."
+    action:
+      type: string
+      enum: ["create", "clean", "merge", "discard"]
+      description: "Worktree operation to execute."
+  required:
+    - branch_name
+    - action

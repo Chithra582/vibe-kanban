@@ -1,0 +1,18 @@
+name: "kanban-card-manager"
+description: "Manages card creation, column transitions, label assignments, and task priority scoring on the Kanban board."
+input_schema:
+  type: object
+  properties:
+    card_id:
+      type: string
+      description: "Unique identifier of the task card."
+    action:
+      type: string
+      enum: ["create", "move", "update", "archive", "delete"]
+      description: "Lifecycle action to perform on the card."
+    target_column:
+      type: string
+      enum: ["backlog", "queued", "in_progress", "review", "done"]
+      description: "Target column for card transition."
+  required:
+    - action

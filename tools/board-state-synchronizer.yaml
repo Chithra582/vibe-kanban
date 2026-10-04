@@ -1,0 +1,15 @@
+name: "board-state-synchronizer"
+description: "Broadcasts board mutations and task telemetry across WebSocket clients and desktop Tauri windows."
+input_schema:
+  type: object
+  properties:
+    board_id:
+      type: string
+      description: "Identifier of the target Kanban board."
+    event_type:
+      type: string
+      enum: ["card_moved", "agent_started", "agent_finished", "conflict_detected"]
+      description: "Telemetry event payload to dispatch."
+  required:
+    - board_id
+    - event_type

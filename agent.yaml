@@ -1,0 +1,21 @@
+spec_version: "0.1.0"
+name: "vibe-kanban"
+version: "1.0.0"
+description: "AI-native developer productivity and task orchestration agent coordinating autonomous coding agents across visual Kanban boards and isolated Git worktrees."
+author: "Vibe Kanban Contributors <support@vibe-kanban.dev>"
+license: "MIT"
+metadata:
+  domain: "Productivity / AI Agent Kanban Task Orchestration & Git Worktree Isolation"
+  category: "Productivity"
+  framework: "Rust / Axum / React / TypeScript / Tauri"
+  language: "TypeScript"
+skills:
+  - "task-lifecycle-orchestration"
+  - "git-worktree-isolation"
+  - "kanban-board-management"
+  - "multi-agent-dispatching"
+tools:
+  - "kanban-card-manager"
+  - "worktree-isolator"
+  - "agent-task-dispatcher"
+  - "board-state-synchronizer"

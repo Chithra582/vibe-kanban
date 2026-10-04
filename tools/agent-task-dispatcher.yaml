@@ -1,0 +1,18 @@
+name: "agent-task-dispatcher"
+description: "Dispatches coding goals to AI agent harnesses (Claude, OpenCode, Codex), monitoring turn trajectories."
+input_schema:
+  type: object
+  properties:
+    task_id:
+      type: string
+      description: "Task identifier bound to the active card."
+    prompt_instruction:
+      type: string
+      description: "Detailed specification of the software task to perform."
+    worktree_path:
+      type: string
+      description: "File system path of the isolated agent workspace."
+  required:
+    - task_id
+    - prompt_instruction
+    - worktree_path
